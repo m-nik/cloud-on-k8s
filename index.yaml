@@ -1,0 +1,47 @@
+apiVersion: v1
+entries:
+  eck-stack:
+  - apiVersion: v2
+    created: "2025-01-20T22:01:51.176514435+03:30"
+    dependencies:
+    - condition: eck-elasticsearch.enabled
+      name: eck-elasticsearch
+      repository: ""
+      version: 0.14.1
+    - condition: eck-kibana.enabled
+      name: eck-kibana
+      repository: ""
+      version: 0.14.1
+    - condition: eck-agent.enabled
+      name: eck-agent
+      repository: ""
+      version: 0.14.1
+    - condition: eck-fleet-server.enabled
+      name: eck-fleet-server
+      repository: ""
+      version: 0.14.1
+    - condition: eck-beats.enabled
+      name: eck-beats
+      repository: ""
+      version: 0.14.1
+    - condition: eck-logstash.enabled
+      name: eck-logstash
+      repository: ""
+      version: 0.14.1
+    - condition: eck-apm-server.enabled
+      name: eck-apm-server
+      repository: ""
+      version: 0.14.1
+    - condition: eck-enterprise-search.enabled
+      name: eck-enterprise-search
+      repository: ""
+      version: 0.14.1
+    description: Elastic Stack managed by the ECK Operator
+    digest: 1c780d5727bf74e42422a181cab0d52751a3b01502a72f7914eb7884e2cddb1c
+    kubeVersion: '>= 1.21.0-0'
+    name: eck-stack
+    type: application
+    urls:
+    - https://m-nik.github.io/cloud-on-k8s/eck-stack-0.14.1.tgz
+    version: 0.14.1
+generated: "2025-01-20T22:01:51.168624302+03:30"
